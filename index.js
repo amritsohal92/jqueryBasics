@@ -39,4 +39,4 @@ $(document).ready(()=>{     //when writing an arrow function inside document.rea
 
     $('.btnButton').empty(); //to empty the element and retain it
 
-}) //end doc ready
+}) //end document ready
