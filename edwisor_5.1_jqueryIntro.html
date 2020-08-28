@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="Logo.svg" type="image/svg">
+    <title>Jquery</title>
+    <!--Stylesheets-->
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <!--Bootstrap CDN-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+
+<body>
+    <main>
+        Jquery was created in 2006.
+        - It is cross playform javascript library that is used to create the dynamism in the web.
+        - The sole purpose with which it was created to simplify use of Javascipt on Frpntend i.e. on Client Side.
+        - It's motto is "Write Less, Do More".
+        - It is still being updated.
+        - Jquery is basically an abstraction of Client Side Javascript.
+
+        Jquery can help you with a lot of stuff. Jquery comes in Handy with:
+        - findings things on HTML documents and then changing their content.
+        - Defining event listeners for variosu elements of your webpage andthen reacting according to a particular
+        action.
+        - Communicate with backend applications and then update the page's content accordingly.
+        - Create striking visual effects and better UX by combining listeners, animations and stuff.
+
+        Jquery specializes in manipulating web pages, animations, Ajax calls and handling events. Jquery should be used when:
+        - Creating simple web pages with striking visual effects and awesome UX.
+        - Create simple web applications with simple data manipulation required.
+        - Creae animations in web pages - simple or complex.
+        - Create custom libraries/components/plugins of your own which can be used by any websites.
+
+        Jquery facts that noone tells:
+        - It's easy to use and learn and almost all the functionalities of modern Javascript frameworks can be
+        replicated in Jquery.
+        - There are thousands of Jquery plugins already present and stable which you can directly use in your
+        application. They are often lightweight and hence don't affect the speed of your website.
+        - It's much SEO friendly in comparison to modern Javascript Frameworks.
+        - It's compatible with all the browsers.
+        - Lot of resoureces to help you, if you are stuck.
+
+        Jquery Basics:
+        - Concept of DOM
+        - How jQuery interacts with DOM.
+        - hello World program.
+
+        Concept of DOM:
+        - It stands for document object model.
+        - When a webpage is loaded, browser creates a Document Object Model of it.
+        - DOM defines the standards for accessing documents.
+        - You can think of HTML DOM as a programming mapping for HTML through which HTML elements start acting like Objects. They have their own properties, methods and events.
+
+        - You should wrap all your jquery or JS code in Document Ready function.
+        - Install jquery in page by using the CDN url.
+        - Create document ready function.
+        - Start writing your jQuery code inside it.
+
+        $(document).ready(function(){
+        //write code here
+        });
+
+        Playing with HTML using jquery
+        - JQuery Syntax
+        - Manipulating HTML with Jquery
+        - Some Do's and Don'ts
+
+        JQuery Syntax:
+        - Syntax is quite literal and easy to understand.
+        $(Selector).action();
+        - $ sign denotes jquery function.
+        - Selector selects the HTML element.
+        - . is a separator
+        - action is to perform action on a selected element. Example below
+    <!-- Preferred is to download jQuery file and add in script tag, instead of using CDN like it is used now.-->
+
+    <!--
+        <script type="text/javascript">
+            $(document).ready(function () { //this is the callback function. you can define it outside ready function and call it here.
+    
+                alert("document is ready")
+    
+            }); // end document ready function 
+    
+            another way for callback function, not recommended.
+            function showAlert(){
+            alert("document is ready")  
+            }
+            $(document).ready(showAlert());
+    
+        </script>
+    -->
+        You can find elements on the basis of
+        - Element name (like body, html, head)
+        - Element Class
+        - ID
+        - Combination of class and ID
+        - Parents and Descendents
+
+        You can get and set a lot of things
+        - GET
+            o You can get the contents of the HTML element.
+            o You can get the attribute values of an HTML element.
+        
+        - SET
+            o You can set the contents of the HTML element
+            o You can set the attribute values of an HTML element.
+        
+        - Add & remove
+            o Add content at the beginning or end of some element.
+            o Remove an element or an element inside it.
+        
+        DON'Ts
+        - Please make sure your responsiveness is not affected.
+        - Please make sure that the elements that have been created or introduced using jquery are not overlapping or disturbing any other elements in any screen size.
+
+        To learn more about selectors, go to below link:
+        https://api.jquery.com/category/selectors/
+        
+
+
+    </main>
+</body>
+
+</html>
